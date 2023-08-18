@@ -1,0 +1,318 @@
+/* css code starts here */
+
+#nav-two label{
+  padding:5px;
+  cursor:pointer;
+}
+nav label{
+  cursor:pointer;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    overflow-x: hidden;
+}
+header.first{width:100%;
+margin-top:15px;
+
+}
+
+
+
+section.info{
+    width:100vw;
+    text-align: center;
+    font-size: 30vh;
+    font-weight: bold;
+    color:white;
+    background-color: lavender;
+}
+body{
+  background:gainsboro;
+}
+/* first tab */
+nav#nav-one{
+    width:95%;
+    margin:50px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+input{display: none;}
+
+nav#nav-one label{
+    text-align: center;
+    width: 20%;
+    padding:10px 15px;
+    font-weight: bold;
+    font-size:25px;
+border:3px solid gainsboro;
+background-color: white;
+color:rgb(194, 180, 180);
+transition: background 0.5s,color 0.2s;
+}
+nav#nav-one label:hover{
+    color:mediumseagreen;
+}
+span.home{display:none;}
+nav#nav-one input:checked+label,
+nav#nav-one input:checked+label:hover{
+    background-color: mediumseagreen;
+    color:white;
+}
+@media (max-width:970px){
+  nav#nav-one span{font-size:15px;}}
+@media (max-width:600px){
+nav#nav-one label span span{
+    display:none;
+}
+    nav#nav-one span{
+font-size:4.7vw;}
+}
+
+
+
+/* 2nd tab */
+nav#nav-two{
+    width: 100%;
+    display: flex;
+    height: 25vh;
+background-color: transparent;
+}
+
+nav#nav-two label{
+    
+height: 25vh;
+vertical-align: center;
+background-color: lavender;
+width:25%;
+border-right: 1px solid rgb(185, 183, 183);
+border-left:1px solid rgb(185, 183, 183);
+text-align: center;
+color:mediumseagreen;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size:3vw;
+position: relative;
+transition: all 0.5s;
+
+}
+
+
+nav#nav-two input:checked+label::after{
+    content: "";
+    display: block;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top:103%;
+    transform: translate(-50%,-50%);
+    left:50%;
+    border-style: solid;
+    border-width: 15px 10px 0px 10px;
+    border-color:white transparent transparent transparent;
+ 
+
+}
+nav#nav-two label:hover{
+    color:gray;
+}
+
+
+nav#nav-two input:checked+label,
+nav#nav-two input:checked+label:hover{
+    background-color:white;
+    color:gray;
+}
+
+
+
+
+/* tab 3 */
+
+nav#nav-three{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lavender;
+    position: relative;
+}
+nav#nav-three label{
+    height:140px;
+font-size:3vw;
+font-weight: bold;
+
+position: relative;
+transition: all 0.2s;
+color:grey;
+overflow:hidden;
+width:auto;
+}
+
+nav#nav-three label span.glyphicon{
+    position:absolute;
+transform: translateX(-50%);
+left:35%;
+transform: translateY(-50px);
+transition: transform 0.5s;
+
+}
+nav#nav-three label span.nav-3{
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    background-color: mediumseagreen;
+    left: 50%;
+    transform: translateX(-50%);
+top:70%;
+transition: width 0.5s;
+}
+
+@media (max-width:570px){
+  nav#nav-three label span.nav-3{
+top:55%;
+}
+}
+@media (max-width:400px){
+  nav#nav-three label span.nav-3{
+top:45%;
+}
+}
+@media (min-width:900px){
+  nav#nav-three label{
+font-size:25px;}
+  nav#nav-three label span.nav-3{
+top:80%;}}
+nav#nav-three label span.content{
+display: block;
+ 
+transform: translateY(30px);
+}
+nav#nav-three label:hover{
+    color:mediumseagreen;
+}
+
+nav#nav-three input:checked+label{
+    color:mediumseagreen;
+}
+nav#nav-three input:checked+label span.glyphicon{
+    transform: translateY(30px);
+}
+nav#nav-three input:checked+label span.nav-3{
+    width:5vw;
+}
+
+/* css for the 4th tab */
+
+header.fourth{
+    width:100%;
+    
+}
+nav#nav-four{
+    width:100%;
+display: flex;
+position: relative;
+}
+nav#nav-four label{
+    position: relative;
+    
+    width:20%;
+    text-align: center;
+font-size:2vw;
+color:grey;
+padding:20px 0px;
+height: 13vh;
+
+}
+span.glyphicon{ white-space: nowrap;}
+nav#nav-four label span{
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+transition: top 0.5s;
+    
+}
+nav#nav-four  div#border{
+    position: absolute;
+    top:100%;
+    width:20%;
+    height: 4px;
+    background-color:mediumseagreen;
+    left:0;
+    transition: all 0.5s;
+}
+#sub-4th-one:checked~div#border{
+    left:0;
+}
+#sub-4th-two:checked~div#border{
+    left:20%;
+}
+#sub-4th-three:checked~div#border{
+    left:40%;
+}
+#sub-4th-four:checked~div#border{
+    left:60%;
+}
+#sub-4th-five:checked~div#border{
+    left:80%;
+}
+nav#nav-four input:checked+label span{
+    top:70%;
+}
+
+/* 5th navbar */
+header.fifth{width: 100vw;
+display: flex;
+background-color: lavender;
+justify-content:center; }
+nav#nav-five{
+    width:90%;  
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    
+}
+nav#nav-five label{
+    width:100px;
+    text-align: center;
+    height: 100px;
+    border-radius: 50%;
+font-size:1.6rem;
+    position: relative;
+    color:gray;
+    font-weight: 300;
+    transition: color 0.3s,border 0.1s;
+    border:2px solid transparent;
+}
+nav#nav-five label span.glyphicon{
+    position: absolute;
+    top:34%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: top  ease 0.3s;
+}
+nav#nav-five label span.content{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: top  ease 0.3s;
+}
+nav#nav-five label:hover{
+    color:black;
+}
+
+nav#nav-five input:checked+label,nav#nav-five input:checked+label:hover{
+    border:2px solid mediumseagreen;
+    color:mediumseagreen;
+}
+nav#nav-five input:checked+label span.content{
+    top:70%;
+}
+nav#nav-five input:checked+label span.glyphicon{
+    top:25%;
+}

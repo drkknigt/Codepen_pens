@@ -1,0 +1,934 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div.tears{
+background-color: rgb(224, 224, 233);
+width:19.9px;
+height: 40px;
+border-radius: 50%/80% 50%;
+position:absolute;
+left:50%;
+top:50%;
+transform: translate(-50%,-50%);
+transition: all .4s;
+}
+aside:hover div.tears{
+  opacity: 0;
+}
+div.tear-l{
+  left:35%;
+  top:38%;
+
+}
+div.tear-r{
+  left:65%;
+top:38%;
+}
+
+
+body {
+  overflow:hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(to right,rgb(233, 89, 54),rgb(236, 140, 140));
+}
+div.smile{
+  position: absolute;
+  top:70%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:200px;
+  height: 100px;
+  border-radius: 200px 200px 0px 0px;
+  border:4px solid black;
+  border-bottom:0;
+  transition: all .3s;
+}
+aside:hover div.smile{
+  width:200px;
+  height: 100px;
+  border-radius: 0px 0px 200px 200px;
+  border:4px solid black;
+  border-top:0;
+}
+div.hover {
+  width: 400px;
+  height: 400px;
+  box-shadow: 10px 10px 22px black;
+  background-color: rgb(252, 252, 252);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .3s;
+}
+div.eyes{
+  box-shadow:1px 0px 5px rgb(17, 16, 16);
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:50px;
+  height: 50px;
+  background:linear-gradient(to right,rgb(233, 89, 54),rgb(231, 100, 100));
+  border-radius:50%;
+}
+div.left{
+  left:30%;
+}
+.a-1:hover~div.eyes div.dot{
+left:20%;
+top:10%;
+}
+.a-2:hover~div.eyes div.dot{
+  left:50%;
+  top:10%;
+}
+.a-3:hover~div.eyes div.dot{
+  left:80%;
+  top:10%;
+}
+.a-4:hover~div.eyes div.dot{
+  left:20%;
+  top:50%;
+}
+.a-5:hover~div.eyes div.dot{
+  left:50%;
+  top:60%;
+}
+.a-6:hover~div.eyes div.dot{
+  left:80%;
+  top:50%;
+}
+.a-7:hover~div.eyes div.dot{
+  left:20%;
+  top:80%;
+}
+.a-8:hover~div.eyes div.dot{
+  left:50%;
+  top:80%;
+}
+.a-9:hover~div.eyes div.dot{
+  left:80%;
+  top:80%;
+}
+
+
+div.dot{
+  width:20px;
+  height: 20px;
+  border-radius:50%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  transition:all .3s;
+}
+div.right{
+  left:70%;
+}
+
+aside {
+  width: 400px;
+  height: 400px;
+  perspective: 500px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(13, 29.8px);
+  grid-template-rows: repeat(12,30px);
+  grid-column-gap: 1px;
+  grid-row-gap: 0px;
+}
+
+article {
+  z-index: 4;
+  width: 29.8px;
+  height: 30px;
+  background-color: transparent;
+}
+
+article:nth-child(1):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(12deg);
+}
+
+article:nth-child(2):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(10deg);
+}
+
+article:nth-child(3):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(8deg);
+}
+
+article:nth-child(4):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(6deg);
+}
+
+article:nth-child(5):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(4deg);
+}
+
+article:nth-child(6):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(2deg);
+}
+
+article:nth-child(7):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(0deg);
+}
+
+article:nth-child(8):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-2deg);
+}
+
+article:nth-child(9):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-4deg);
+}
+
+article:nth-child(10):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-6deg);
+}
+
+article:nth-child(11):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-8deg);
+}
+
+article:nth-child(12):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-10deg);
+}
+
+article:nth-child(13):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-12deg);
+}
+
+article:nth-child(1):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(12deg);
+}
+
+article:nth-child(2):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(10deg);
+}
+
+article:nth-child(3):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(8deg);
+}
+
+article:nth-child(4):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(6deg);
+}
+
+article:nth-child(5):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(4deg);
+}
+
+article:nth-child(6):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(2deg);
+}
+
+article:nth-child(7):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(0deg);
+}
+
+article:nth-child(8):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-2deg);
+}
+
+article:nth-child(9):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-4deg);
+}
+
+article:nth-child(10):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-6deg);
+}
+
+article:nth-child(11):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-8deg);
+}
+
+article:nth-child(12):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-10deg);
+}
+
+article:nth-child(13):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(12deg) rotateY(-12deg);
+}
+
+article:nth-child(14):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(12deg);
+}
+
+article:nth-child(15):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(10deg);
+}
+
+article:nth-child(16):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(8deg);
+}
+
+article:nth-child(17):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(6deg);
+}
+
+article:nth-child(18):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(4deg);
+}
+
+article:nth-child(19):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(2deg);
+}
+
+article:nth-child(20):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(0deg);
+}
+
+article:nth-child(21):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(-2deg);
+}
+
+article:nth-child(22):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(-4deg);
+}
+
+article:nth-child(23):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(-6deg);
+}
+
+article:nth-child(24):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(-8deg);
+}
+
+article:nth-child(25):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(-10deg);
+}
+
+article:nth-child(26):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(10deg) rotateY(-12deg);
+}
+
+article:nth-child(27):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(12deg);
+}
+
+article:nth-child(28):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(10deg);
+}
+
+article:nth-child(29):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(8deg);
+}
+
+article:nth-child(30):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(6deg);
+}
+
+article:nth-child(31):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(4deg);
+}
+
+article:nth-child(32):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(2deg);
+}
+
+article:nth-child(33):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(0deg);
+}
+
+article:nth-child(34):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(-2deg);
+}
+
+article:nth-child(35):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(-4deg);
+}
+
+article:nth-child(36):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(-6deg);
+}
+
+article:nth-child(37):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(-8deg);
+}
+
+article:nth-child(38):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(-10deg);
+}
+
+article:nth-child(39):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(8deg) rotateY(-12deg);
+}
+
+article:nth-child(40):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(12deg);
+}
+
+article:nth-child(41):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(10deg);
+}
+
+article:nth-child(42):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(8deg);
+}
+
+article:nth-child(43):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(6deg);
+}
+
+article:nth-child(44):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(4deg);
+}
+
+article:nth-child(45):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(2deg);
+}
+
+article:nth-child(46):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(0deg);
+}
+
+article:nth-child(47):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(-2deg);
+}
+
+article:nth-child(48):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(-4deg);
+}
+
+article:nth-child(49):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(-6deg);
+}
+
+article:nth-child(50):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(-8deg);
+}
+
+article:nth-child(51):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(-10deg);
+}
+
+article:nth-child(52):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(6deg) rotateY(-12deg);
+}
+
+article:nth-child(53):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(12deg);
+}
+
+article:nth-child(54):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(10deg);
+}
+
+article:nth-child(55):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(8deg);
+}
+
+article:nth-child(56):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(6deg);
+}
+
+article:nth-child(57):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(4deg);
+}
+
+article:nth-child(58):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(2deg);
+}
+
+article:nth-child(59):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(0deg);
+}
+
+article:nth-child(60):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(-2deg);
+}
+
+article:nth-child(61):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(-4deg);
+}
+
+article:nth-child(62):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(-6deg);
+}
+
+article:nth-child(63):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(-8deg);
+}
+
+article:nth-child(64):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(-10deg);
+}
+
+article:nth-child(65):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(4deg) rotateY(-12deg);
+}
+
+article:nth-child(66):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(12deg);
+}
+
+article:nth-child(67):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(10deg);
+}
+
+article:nth-child(68):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(8deg);
+}
+
+article:nth-child(69):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(6deg);
+}
+
+article:nth-child(70):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(4deg);
+}
+
+article:nth-child(71):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(2deg);
+}
+
+article:nth-child(72):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(0deg);
+}
+
+article:nth-child(73):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(-2deg);
+}
+
+article:nth-child(74):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(-4deg);
+}
+
+article:nth-child(75):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(-6deg);
+}
+
+article:nth-child(76):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(-8deg);
+}
+
+article:nth-child(77):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(-10deg);
+}
+
+article:nth-child(78):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(2deg) rotateY(-12deg);
+}
+
+article:nth-child(79):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(12deg);
+}
+
+article:nth-child(80):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(10deg);
+}
+
+article:nth-child(81):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(8deg);
+}
+
+article:nth-child(82):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(6deg);
+}
+
+article:nth-child(83):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(4deg);
+}
+
+article:nth-child(84):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(2deg);
+}
+
+article:nth-child(85):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
+}
+
+article:nth-child(86):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(-2deg);
+}
+
+article:nth-child(87):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(-4deg);
+}
+
+article:nth-child(88):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(-6deg);
+}
+
+article:nth-child(89):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(-8deg);
+}
+
+article:nth-child(90):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(-10deg);
+}
+
+article:nth-child(91):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(-12deg);
+}
+
+article:nth-child(79):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(12deg);
+}
+
+article:nth-child(80):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(10deg);
+}
+
+article:nth-child(81):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(8deg);
+}
+
+article:nth-child(82):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(6deg);
+}
+
+article:nth-child(83):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(4deg);
+}
+
+article:nth-child(84):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(2deg);
+}
+
+article:nth-child(85):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);
+}
+
+article:nth-child(86):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(-2deg);
+}
+
+article:nth-child(87):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(-4deg);
+}
+
+article:nth-child(88):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(-6deg);
+}
+
+article:nth-child(89):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(-8deg);
+}
+
+article:nth-child(90):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(-10deg);
+}
+
+article:nth-child(91):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(0deg) rotateY(-12deg);
+}
+
+article:nth-child(92):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(12deg);
+}
+
+article:nth-child(93):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(10deg);
+}
+
+article:nth-child(94):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(8deg);
+}
+
+article:nth-child(95):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(6deg);
+}
+
+article:nth-child(96):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(4deg);
+}
+
+article:nth-child(97):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(2deg);
+}
+
+article:nth-child(98):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(0deg);
+}
+
+article:nth-child(99):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(-2deg);
+}
+
+article:nth-child(100):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(-4deg);
+}
+
+article:nth-child(101):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(-6deg);
+}
+
+article:nth-child(102):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(-8deg);
+}
+
+article:nth-child(103):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(-10deg);
+}
+
+article:nth-child(104):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-2deg) rotateY(-12deg);
+}
+
+article:nth-child(105):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(12deg);
+}
+
+article:nth-child(106):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(10deg);
+}
+
+article:nth-child(107):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(8deg);
+}
+
+article:nth-child(108):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(6deg);
+}
+
+article:nth-child(109):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(4deg);
+}
+
+article:nth-child(110):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(2deg);
+}
+
+article:nth-child(111):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(0deg);
+}
+
+article:nth-child(112):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(-2deg);
+}
+
+article:nth-child(113):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(-4deg);
+}
+
+article:nth-child(114):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(-6deg);
+}
+
+article:nth-child(115):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(-8deg);
+}
+
+article:nth-child(116):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(-10deg);
+}
+
+article:nth-child(117):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-4deg) rotateY(-12deg);
+}
+
+article:nth-child(118):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(12deg);
+}
+
+article:nth-child(119):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(10deg);
+}
+
+article:nth-child(120):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(8deg);
+}
+
+article:nth-child(121):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(6deg);
+}
+
+article:nth-child(122):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(4deg);
+}
+
+article:nth-child(123):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(2deg);
+}
+
+article:nth-child(124):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(0deg);
+}
+
+article:nth-child(125):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(-2deg);
+}
+
+article:nth-child(126):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(-4deg);
+}
+
+article:nth-child(127):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(-6deg);
+}
+
+article:nth-child(128):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(-8deg);
+}
+
+article:nth-child(129):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(-10deg);
+}
+
+article:nth-child(130):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-6deg) rotateY(-12deg);
+}
+
+article:nth-child(131):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(12deg);
+}
+
+article:nth-child(132):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(10deg);
+}
+
+article:nth-child(133):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(8deg);
+}
+
+article:nth-child(134):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(6deg);
+}
+
+article:nth-child(135):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(4deg);
+}
+
+article:nth-child(136):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(2deg);
+}
+
+article:nth-child(137):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(0deg);
+}
+
+article:nth-child(138):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(-2deg);
+}
+
+article:nth-child(139):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(-4deg);
+}
+
+article:nth-child(140):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(-6deg);
+}
+
+article:nth-child(141):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(-8deg);
+}
+
+article:nth-child(142):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(-10deg);
+}
+
+article:nth-child(143):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-8deg) rotateY(-12deg);
+}
+
+article:nth-child(144):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(12deg);
+}
+
+article:nth-child(145):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(10deg);
+}
+
+article:nth-child(146):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(8deg);
+}
+
+article:nth-child(147):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(6deg);
+}
+
+article:nth-child(148):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(4deg);
+}
+
+article:nth-child(149):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(2deg);
+}
+
+article:nth-child(150):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(0deg);
+}
+
+article:nth-child(151):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(-2deg);
+}
+
+article:nth-child(152):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(-4deg);
+}
+
+article:nth-child(153):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(-6deg);
+}
+
+article:nth-child(154):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(-8deg);
+}
+
+article:nth-child(155):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(-10deg);
+}
+
+article:nth-child(156):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-10deg) rotateY(-12deg);
+}
+article:nth-child(157):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(12deg);
+}
+
+article:nth-child(158):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(10deg);
+}
+
+article:nth-child(159):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(8deg);
+}
+
+article:nth-child(160):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(6deg);
+}
+
+article:nth-child(161):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(4deg);
+}
+
+article:nth-child(162):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(2deg);
+}
+
+article:nth-child(163):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(0deg);
+}
+
+article:nth-child(164):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(-2deg);
+}
+
+article:nth-child(165):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(-4deg);
+}
+
+article:nth-child(166):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(-6deg);
+}
+
+article:nth-child(167):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(-8deg);
+}
+
+article:nth-child(168):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(-10deg);
+}
+
+article:nth-child(169):hover~div.hover {
+  transform: translate(-50%, -50%) rotateX(-12deg) rotateY(-12deg);
+}
+article.last{
+  height: 38px;
+}
